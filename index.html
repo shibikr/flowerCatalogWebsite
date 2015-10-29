@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flower catalog </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+	function hideImage(){
+		document.getElementById('loadingImage').style.display='none';
+		setTimeout('showImage()',1000);
+	};
+	function showImage(){
+		document.getElementById('loadingImage').style.display='inline';
+	};
+	</script>
+</head>
+<body>
+<div style="background-color:white; color:yellow; padding:20px;">
+<hr>
+<h1><center><font color="orange" size="50px">Flower Catalog</font></center></h1>
+<hr>
+</div>
+<img src="/Users/shibik/projects/flowerCatalogWebsite/pictures/freshorigins.jpg" height="600" width="1100">
+<div id ="links">
+	<li><a href="/Users/shibik/projects/flowerCatalogWebsite/abeliophyllum.html">Abeliophyllum</a></li>
+	<li><a href="/Users/shibik/projects/flowerCatalogWebsite/ageratum.html">Ageratum</a></li>
+	<h1 onclick="hideImage()"><img id='loadingImage' src="/Users/shibik/projects/flowerCatalogWebsite/pictures/animated-flower-image-0021.gif" align="right"></h1>
+<a href="/Users/shibik/projects/flowerCatalogWebsite/guestBook.html">Guest Book</a>
+</div>
+</body>
+</html>
